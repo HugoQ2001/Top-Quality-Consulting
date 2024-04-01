@@ -1,0 +1,85 @@
+.presentation {
+    min-height: 100vh;
+    background: var(--mainColor);
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.presentation-backfround {
+    background-color: var(--mainColor);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    max-height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.presentation-content {
+    display: flex;
+    justify-content: center;
+}
+
+.presentation-logo {
+    width: 313.481px;
+    height: 310.846px;
+    padding-right: 1rem;
+    flex-shrink: 0;
+}
+
+.presentation-content-title-primary {
+    color: #64ffda;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.presentation-content{
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.presentation-content:hover {
+    filter: drop-shadow(0 0 15em #64FFDA);
+}
+
+.presentation-content-title-secundary {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+hr {
+    width: 372px;
+    height: 2.5px;
+    background-color: #64FFDA;
+    border: none;
+    margin-top: 7px;
+    margin-bottom: 13px;
+    border-radius: 2rem;
+}
+
+.presentation-content-title-slogan {
+    color: #64FFDA;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@media (max-width: 890px) {
+    .presentation-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .presentation-logo {
+        width: 280px;
+        height: 280px;
+        padding-right: 1rem;
+        flex-shrink: 0;
+    }
+}
